@@ -88,7 +88,7 @@ while True:
       dat = reem.json()
       print(dat)
     elif inp == "4":
-      infff = input("enter the website to take a screenshot make sure to include the HTTP(S) protocol too: ")
+      infff = input("enter the website to take the screenshot: ")
       ss = requests.get(f"https://screenshot.abstractapi.com/v1/?api_key={keyForScreeenShot}&url={infff}")
       screen = ss.content
       
